@@ -22,12 +22,13 @@ export default function App() {
     {
       path: "/",
       element: <Layout />,
+      errorElement:<>error</>,
       children: [ 
         { path: "", element: <Home /> },
         { path: "home", element: <Home /> },
         { path: "login", element: <Login getFromlogin={getFromlogin} /> },
         { path: "register", element: <Register /> },
-        { path: "*", element: <div className="bg-secondry vh-100"></div> }
+        { path: "*", element: <div style={{margin: "18vh auto"}} className="bg-secondry vh-100">Page not found</div> }
       ]
     },
     {

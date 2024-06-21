@@ -29,7 +29,7 @@ const Capture = ({ onCapture }) => {
             if (response.similarities === "None") {
               navigate('/Register',{replace: true})
             } else {
-              navigate('/login',{replace: true});
+              navigate('/Login',{replace: true});
             }
           } catch (error) {
             console.error('Error sending photo:', error);
